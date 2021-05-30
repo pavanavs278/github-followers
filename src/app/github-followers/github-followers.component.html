@@ -1,0 +1,22 @@
+<div>
+    <h2>
+        List of Github Followers
+    </h2>
+</div>
+<div *ngFor= "let follower of followers">
+    <div class ="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="avatar" src="{{follower.avatar_url}}" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{follower.login}}</h5>
+            
+              <a href="{{follower.html_url}}" class="card-text">{{follower.html_url}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
